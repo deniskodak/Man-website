@@ -31,6 +31,7 @@ body {
 }
 img {
   display: block;
+  margin: 0;
 }
 h1,
 h2,
@@ -208,6 +209,7 @@ h4 {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
+  text-transform: uppercase;
 
   margin-bottom: 100px;
 }
@@ -237,14 +239,14 @@ h4 {
 .new-collection .item {
   max-width: 1040px;
 }
-.new-collection .title {
+.product-title {
   margin-bottom: 10px;
 
   text-align: left;
   font-size: 18px;
   font-weight: 400;
 }
-.new-collection .text {
+.product-text {
   margin: 0;
 
   font-weight: 700;
@@ -264,4 +266,44 @@ h4 {
 .img-box {
   min-width: 880px;
   background-image: url(../images/Rectangle8.jpg);
+}
+
+.new-products {
+  padding-top: 120px;
+  padding-bottom: 150px;
+  background-color: var(--bg-secondary);
+}
+.new-products .title {
+  margin-bottom: 121px;
+}
+.products-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.products-list .item:not(:nth-child(4n)) {
+  margin-right: 23px;
+}
+.products-list .item:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 40px;
+}
+
+.brands {
+  background-color: var(--bg-primary);
+}
+.clients-list {
+  display: flex;
+}
+.clients-list .item {
+  width: calc((100% - 3 * 30px) / 4);
+}
+.clients-list .item.item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-link {
+  display: inline-block;
+  background-color: var(--bg-primary);
+  fill: var(--primary-text);
 }
