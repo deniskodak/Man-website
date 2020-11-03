@@ -154,22 +154,25 @@ h4 {
 }
 
 .hero {
-  background-image: url(/images/Rectangle3.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
   max-width: 1920px;
   height: 810px;
+
+  background-image: url(/images/Rectangle3.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   text-transform: uppercase;
   text-align: center;
+  background-color: var(--bg-secondary);
 }
-.hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 .hero-box {
   display: flex;
   flex-direction: column;
@@ -201,6 +204,10 @@ h4 {
   line-height: 1.3;
 }
 .our-collection {
+  max-width: 1920px;
+  margin-right: auto;
+  margin-left: auto;
+
   line-height: 1.333;
   font-family: "Playfair Display", serif;
   background-color: var(--bg-secondary);
@@ -236,9 +243,7 @@ h4 {
 .new-collection .item:not(:last-child) {
   margin-right: 50px;
 }
-.new-collection .item {
-  max-width: 1040px;
-}
+
 .product-title {
   margin-bottom: 10px;
 
@@ -264,10 +269,67 @@ h4 {
   background-color: var(--product);
 }
 .img-box {
-  min-width: 880px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 100px;
+  max-width: 880px;
+  width: 100%;
+  min-height: 730px;
+  height: 100%;
+
   background-image: url(../images/Rectangle8.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+.img-box .title {
+  margin-bottom: 60px;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 1px solid var(--primary-text);
+
+  font-family: PT Sans, sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.img-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img-box-2 {
+  max-width: 880px;
+  width: 100%;
+  min-height: 600px;
+  height: 100%;
+  background-image: url("../images/second_img.jpg");
+}
+.list-box-2 {
+  padding: 100px 284px;
+  text-align: center;
+}
+.collection-content-2 {
+  max-width: 471px;
+  width: 100%;
+}
+.collection-content-2 .title {
+  margin-bottom: 80px;
+}
+.collection-content-2 .text {
+  font-family: PT Sans, sans-serif;
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-size: 14px;
+  line-height: 1.5;
+}
 .new-products {
   padding-top: 120px;
   padding-bottom: 150px;
